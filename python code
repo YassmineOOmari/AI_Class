@@ -1,0 +1,34 @@
+import random 
+import json
+
+print("Hello. Here are the options we have for you to select. \n")
+print("1. Give me a random quote\n" "2. I want to add a new quote")
+
+questions = int(input("> "))
+if questions == 1:
+    
+    def read_quotes_from_json(quotes.json):
+
+        quotes = []
+        with open(file_name, "r") as file:
+            data = json.load(file)
+            quotes = data["quotes"]
+        return quotes
+
+    def get_random_quote(quotes):
+        """Returns a random quote from a list of quotes."""
+        return random.choice(quotes)
+
+    def main():
+        """Main function that reads quotes from a JSON file, selects a random quote, and prints it to the console."""
+        file_name = "quotes.json"  # Update this with the name of your JSON file
+        quotes = read_quotes_from_json(file_name)
+        if quotes:
+            quote = get_random_quote(quotes)
+            print("Quote: ", quote["quote"])
+            print("Author: ", quote["author"])
+        else:
+            print("No quotes found in the file.")
+
+    if __name__ == "__main__":
+        main()
