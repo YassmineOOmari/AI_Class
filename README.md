@@ -11,7 +11,7 @@ Create a Python program that generates a random quote each time it is run. Your 
 To use this code:
 
 > 01. Have both files in the same folder
-> 02. Rename the path in the code file to the path of the folder the file is in - instructions on how to change the path
+> 02. Rename the path in the code file to the path of the folder the file is in
 > 03. run the code
 
 After running the code:
